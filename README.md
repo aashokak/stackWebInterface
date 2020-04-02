@@ -1,10 +1,10 @@
 ## Getting Started
 
-To get you started you can simply clone the `angular-seed` repository and install the dependencies:
+To get you started you can simply clone the `stackWebInterface` repository and install the dependencies:
 
 ### Prerequisites
 
-You need git to clone the `stackApp` repository. You can get git from [here][git].
+You need git to clone the `stackWebInterface` repository. You can get git from [here][git].
 
 We also use a number of Node.js tools to initialize and test `stackApp`. You must have Node.js
 and its package manager (npm) installed. You can get them from [here][node].
@@ -14,14 +14,14 @@ and its package manager (npm) installed. You can get them from [here][node].
 Clone the `stackApp` repository using git:
 
 ```
-git clone https://github.com/angular/angular-seed.git
-cd stackApp
+git clone https://github.com/angular/stackWebInterface.git
+cd stackWebInterface
 ```
 
-If you just want to start a new project without the `stackApp` commit history then you can do:
+If you just want to start a new project without the `stackWebInterface` commit history then you can do:
 
 ```
-git clone --depth=1 https://github.com/angular/stackApp.git <your-project-name>
+git clone --depth=1 https://github.com/angular/stackWebInterface.git <your-project-name>
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
@@ -140,7 +140,7 @@ you can change the version range in `package.json` and then run `npm run update-
 
 ### Running the App during Development
 
-The `stackApp` project comes preconfigured with a local development web server. It is a Node.js
+The `stackWebInterface` project comes preconfigured with a local development web server. It is a Node.js
 tool called [http-server][http-server]. You can start this web server with `npm start`, but you may
 choose to install the tool globally:
 
