@@ -14,14 +14,14 @@ and its package manager (npm) installed. You can get them from [here][node].
 Clone the `stackApp` repository using git:
 
 ```
-git clone https://github.com/angular/stackWebInterface.git
+git clone https://github.com/aashokak/stackWebInterface.git
 cd stackWebInterface
 ```
 
 If you just want to start a new project without the `stackWebInterface` commit history then you can do:
 
 ```
-git clone --depth=1 https://github.com/angular/stackWebInterface.git <your-project-name>
+git clone --depth=1 https://github.com/aashokak/stackWebInterface.git <your-project-name>
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
