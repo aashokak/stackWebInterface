@@ -9,9 +9,9 @@ You need git to clone the `stackWebInterface` repository. You can get git from [
 We also use a number of Node.js tools to initialize and test `stackApp`. You must have Node.js
 and its package manager (npm) installed. You can get them from [here][node].
 
-### Clone `stackApp`
+### Clone `stackWebInterface`
 
-Clone the `stackApp` repository using git:
+Clone the `stackWebInterface` repository using git:
 
 ```
 git clone https://github.com/aashokak/stackWebInterface.git
@@ -90,7 +90,7 @@ package-lock.json     --> Npm specific metadata, including versions of installed
 
 ## Testing
 
-There are two kinds of tests in the `angular-seed` application: Unit tests and end-to-end tests.
+There are two kinds of tests in the `stackWebInterface` application: Unit tests and end-to-end tests.
 
 ### Running Unit Tests
 
@@ -182,8 +182,6 @@ For more information on AngularJS please check out [angularjs.org][angularjs].
 [git]: https://git-scm.com/
 [http-server]: https://github.com/indexzero/http-server
 [jasmine]: https://jasmine.github.io/
-[jdk]: https://wikipedia.org/wiki/Java_Development_Kit
-[jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads
 [karma]: https://karma-runner.github.io/
 [local-app-url]: http://localhost:8000/index.html
 [node]: https://nodejs.org/
