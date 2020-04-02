@@ -71,16 +71,10 @@ Now browse to the app at [`localhost:8000/index.html`][local-app-url].
 app/                  --> all of the source files for the application
   app.css               --> default stylesheet
   core/                 --> all app specific modules
-    version/              --> version related components
-      version.js                 --> version module declaration and basic "version" value service
-      version_test.js            --> "version" value service tests
-      version-directive.js       --> custom directive that returns the current app version
-      version-directive_test.js  --> version directive tests
-      interpolate-filter.js      --> custom interpolation filter
-      interpolate-filter_test.js --> interpolate filter tests
   stackApp/                --> the stackApp view template and logic
     stackApp.html            --> the partial template
     stackApp.js              --> the controller logic
+    stackAppService.js       --> the service
     stackApp_test.js         --> tests of the controller
   app.js                --> main application module
   index.html            --> app layout file (the main html template file of the app)
@@ -144,32 +138,9 @@ If you want to update a dependency to a version newer than what the specificed r
 you can change the version range in `package.json` and then run `npm run update-deps` as usual.
 
 
-## Loading AngularJS Asynchronously
-
-The `angular-seed` project supports loading the framework and application scripts asynchronously.
-The special `index-async.html` is designed to support this style of loading. For it to work you must
-inject a piece of AngularJS JavaScript into the HTML page. The project has a predefined script to help
-do this:
-
-```
-npm run update-index-async
-```
-
-This will copy the contents of the `angular-loader.js` library file into the `index-async.html`
-page. You can run this every time you update the version of AngularJS that you are using.
-
-
-## Serving the Application Files
-
-While AngularJS is client-side-only technology and it is possible to create AngularJS web apps that
-do not require a backend server at all, we recommend serving the project files using a local
-web server during development to avoid issues with security restrictions (sandbox) in browsers. The
-sandbox implementation varies between browsers, but quite often prevents things like cookies, XHR,
-etc to function properly when an HTML page is opened via the `file://` scheme instead of `http://`.
-
 ### Running the App during Development
 
-The `angular-seed` project comes preconfigured with a local development web server. It is a Node.js
+The `stackApp` project comes preconfigured with a local development web server. It is a Node.js
 tool called [http-server][http-server]. You can start this web server with `npm start`, but you may
 choose to install the tool globally:
 
@@ -201,18 +172,6 @@ applicable. Usually this is done by hosting the files by the backend server or t
 reverse-proxying the backend server(s) and web server(s).
 
 
-## Continuous Integration
-
-### Travis CI
-
-[Travis CI][travis] is a continuous integration service, which can monitor GitHub for new commits to
-your repository and execute scripts such as building the app or running tests. The `angular-seed`
-project contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your
-tests when you push to GitHub.
-
-You will need to enable the integration between Travis and GitHub. See the
-[Travis website][travis-docs] for instructions on how to do this.
-
 
 ## Contact
 
@@ -229,7 +188,4 @@ For more information on AngularJS please check out [angularjs.org][angularjs].
 [local-app-url]: http://localhost:8000/index.html
 [node]: https://nodejs.org/
 [npm]: https://www.npmjs.org/
-[protractor]: http://www.protractortest.org/
 [selenium]: http://docs.seleniumhq.org/
-[travis]: https://travis-ci.org/
-[travis-docs]: https://docs.travis-ci.com/user/getting-started
