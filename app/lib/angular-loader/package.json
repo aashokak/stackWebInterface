@@ -1,0 +1,37 @@
+{
+  "name": "angular-loader",
+  "version": "1.7.5",
+  "description": "AngularJS module for asynchronously loading modules",
+  "main": "angular-loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular.js.git"
+  },
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "loader",
+    "client-side"
+  ],
+  "author": "Angular Core Team <angular-core+npm@google.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "homepage": "http://angularjs.org",
+  "jspm": {
+    "shim": {
+      "angular-loader": {
+        "deps": ["angular"]
+      }
+    }
+  }
+
+,"_resolved": "https://registry.npmjs.org/angular-loader/-/angular-loader-1.7.5.tgz"
+,"_integrity": "sha512-3dDyHc/ySVs/EjKcKOJQ8tppsnp64ZO1lrUD6H8JpKq947lntdE/KF5V2Urv91SaGofRY9VwLibkLTdF32FR5Q=="
+,"_from": "angular-loader@1.7.5"
+}

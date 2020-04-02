@@ -1,0 +1,33 @@
+<div>
+	<form class="stackForm" name="stackForm">
+    <h1 class="centerAlign">Simple Stack with Web Interface</h1>
+    <div>
+      <div class="appButtons">
+        <button ng-click="ctrl.printStack()" ng-disabled="ctrl.isEmpty()">Display Items</button>
+        <button ng-click="ctrl.pop()" ng-disabled="ctrl.isEmpty()">Delete Item</button>
+        <button ng-click="ctrl.insertItem()" ng-disabled="stackForm.$invalid">Insert Item to be added</button>
+      </div>
+      <div>
+        <div class="stackForm-fields">
+          <label>Configure Stack Size</label>
+          <input type="number" ng-model="ctrl.stackSize" required/>
+        </div>
+        <div class="stackForm-fields" ng-if="ctrl.displayInputElement && !ctrl.displayStackOverFlow">
+          <label>Insert item to push</label>
+          <input type="number" ng-model="ctrl.newItem" />
+          <button ng-click="ctrl.push()"
+            ng-bind="ctrl.addButtonText"></button>
+        </div>
+      </div>
+      <div class="stackForm-fields stackForm-warningText"
+        ng-if="ctrl.displayStackOverFlow">Stack is full, please delete an item and add
+      </div>
+      <ul class="stackForm-fields stackForm-infoText"
+        ng-if="ctrl.displayItems && !ctrl.isEmpty()">
+         <h3>The items in the stack are</h3>
+         <li ng-repeat="item in ctrl.service.items track by $index">{{ item }}</li>
+      </ul>
+    </div>
+        
+  </form>
+</div>

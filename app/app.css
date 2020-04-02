@@ -1,0 +1,44 @@
+/* app css stylesheet */
+
+button {
+	min-width: 40px
+	height: 20px;
+	border-radius: 20px;
+	font-size: 15px;
+	border: 2px solid;
+}
+
+label,
+input {
+	margin-right: 5px;
+}
+
+.centerAlign {
+	text-align: center;
+	border: 2px solid;
+}
+
+.appButtons {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.stackForm {
+	min-width: 600px;
+	min-height: 800px;
+}
+
+.stackForm-fields {
+	padding: 20px
+}
+
+.stackForm-warningText {
+	color: #9F6000;
+    background-color: #FEEFB3;
+}
+
+.stackForm-infoText {
+	color: #00529B;
+    background-color: #BDE5F8;
+}
